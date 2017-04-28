@@ -1,0 +1,15 @@
+p{               
+    background-color: lightgrey;
+    text-align: center;
+    width: 50%;
+    border-left: 20px solid red;
+    border-right: 20px solid red;
+    border-radius: 20px;
+}
+.buttons{
+    margin-top: 6%;
+    padding-left: 5%;
+    padding-right: 6%;
+    background-color: blueviolet;
+    width: 40%;
+}
