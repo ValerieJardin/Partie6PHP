@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
@@ -12,9 +13,9 @@
         <!--Mise en place d'une balise p pour mettre le script php-->
         <p>
             <?php
-// Vérification de la présence des paramètres langage et serveur
-            // Mise en place de la fonction qui teste la présence des variables = la fonction isset()
-
+            /** Vérification de la présence des paramètres langage et serveur
+              Mise en place de la fonction qui teste la présence des variables = la fonction isset()
+              À noter : $_GET est un tableau associatif */
             if (isset($_GET['langage']) AND isset($_GET['serveur'])) { // On a le nom du langage et du serveur
 // Afficher les éléments
                 echo 'Tu essaies d\'utiliser le langage ' . $_GET['langage'] . ' et tu te sers du serveur ' . $_GET['serveur'] . ' !';
@@ -23,6 +24,5 @@
             }
             ?>
         </p>
-
     </body>
 </html>

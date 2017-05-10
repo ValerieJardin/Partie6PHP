@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
@@ -12,9 +13,9 @@
         <!--Mise en place d'une balise p pour mettre le script php-->
         <p>
             <?php
-// Vérification de la présence du paramètre semaine
-            // Mise en place de la fonction qui teste la présence des variables = la fonction isset()
-
+            /** Vérification de la présence du paramètre semaine
+              Mise en place de la fonction qui teste la présence des variables = la fonction isset()
+              À noter : $_GET est un tableau associatif * */
             if (isset($_GET['semaine'])) { // On a le numéro de la semaine
 // Afficher les éléments
                 echo 'Nous sommes en semaine ' . $_GET['semaine'] . ' !';

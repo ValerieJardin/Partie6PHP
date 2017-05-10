@@ -1,7 +1,8 @@
+<!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.o"> 
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.o"/> 
         <!--Lien pour cssiser la vue-->
         <link href="../style.css" rel="stylesheet" type="text/css"/>
         <!--Faire une page index.php. Tester sur cette page que le paramètre age existe et si c'est le cas 
@@ -12,10 +13,11 @@
         <!--Mise en place d'une balise p pour mettre le script php-->
         <p>
             <?php
-// Vérification de la présence des paramètres nom, prénom et âge
-            // Mise en place de la fonction qui teste la présence des variables = la fonction isset()
+/** Vérification de la présence des paramètres nom, prénom et âge
+            Mise en place de la fonction qui teste la présence des variables = la fonction isset()
+            À noter : $_GET est un tableau associatif **/          
 
-            if (isset($_GET['prenom']) AND isset($_GET['nom']) AND isset($_GET['age'])) { // On a le nom, le prénom et l'âge
+            if (isset($_GET['prenom']) && isset($_GET['nom']) && isset($_GET['age'])) { // On a le nom, le prénom et l'âge
 // Afficher les éléments
                 echo 'Bonjour ' . $_GET['prenom'] . ' ' . $_GET['nom'] . ' vous avez ' . $_GET['age'] . ' an(s) !';
             } else { // Il manque des paramètres, on avertit le visiteur

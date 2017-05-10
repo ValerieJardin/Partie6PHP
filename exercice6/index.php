@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
@@ -12,9 +13,9 @@
         <!--Mise en place d'une balise p pour mettre le script php-->
         <p>
             <?php
-// Vérification de la présence des paramètres numéro du batiment et numéro de la salle
-            // Mise en place de la fonction qui teste la présence des variables = la fonction isset()
-
+            /** Vérification de la présence des paramètres numéro du batiment et numéro de la salle
+              Mise en place de la fonction qui teste la présence des variables = la fonction isset()
+              À noter : $_GET est un tableau associatif * */
             if (isset($_GET['batiment']) AND isset($_GET['salle'])) { // On a le numéro de la semaine
 // Afficher les éléments
                 echo 'Votre formation a lieu dans le batiment ' . $_GET['batiment'] . ', la salle numéro' . $_GET['salle'] . ' !';

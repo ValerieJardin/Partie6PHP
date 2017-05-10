@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
@@ -12,9 +13,10 @@
         <!--Mise en place d'une balise p pour mettre le script php-->
         <p>
             <?php
-// Vérification de la présence des paramètres date de début et date de fin
-            // Mise en place de la fonction qui teste la présence des variables = la fonction isset()
-
+/** Vérification de la présence des paramètres date de début et date de fin
+            Mise en place de la fonction qui teste la présence des variables = la fonction isset()
+            À noter : $_GET est un tableau associatif **/
+            
             if (isset($_GET['dateDebut']) AND isset($_GET['dateFin'])) { // On a les dates de début et de fin
 // Afficher les éléments
                 echo 'Date de début est  ' . $_GET['dateDebut'] . ' et la date de fin est ' . $_GET['dateFin'] . ' !';
